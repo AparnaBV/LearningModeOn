@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-passed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">27 methods,   27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="addDuplicateItemToListTest">addDuplicateItemToListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="addInvalidItemToListErrorTest">addInvalidItemToListErrorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="addInvalidItemToListTest(testInvalidItemMediaType.json)">addInvalidItemToListTest(testInvalidItemMediaType.json)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="addInvalidItemToListTest(testInvalidItemsMissingMediaId.json)">addInvalidItemToListTest(testInvalidItemsMissingMediaId.json)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="addInvalidItemToListTest(testInvalidItemMediaId.json)">addInvalidItemToListTest(testInvalidItemMediaId.json)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="addInvalidItemToListTest(testInvalidItemsMissingMediaType.json)">addInvalidItemToListTest(testInvalidItemsMissingMediaType.json)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="addItemInvalidTokenTest">addItemInvalidTokenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="addValidItemToListTest">addValidItemToListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="clearAllItemsinInvalidListTest">clearAllItemsinInvalidListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="clearAllItemsinValidListTest">clearAllItemsinValidListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="clearListInvalidTokenTest">clearListInvalidTokenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="createInvalidListTest(testInvalidListMissingName.json, name must be provided)">createInvalidListTest(testInvalidListMissingName.json, name must be provided)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="createInvalidListTest(testInvalidListMissingISO639.json, iso_639_1 must be provided)">createInvalidListTest(testInvalidListMissingISO639.json, iso_639_1 must be provided)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="createListInvalidTokenTest">createListInvalidTokenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="createValidListTest(testValidListDefaults.json)">createValidListTest(testValidListDefaults.json)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="createValidListTest(testValidList.json)">createValidListTest(testValidList.json)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="createValidListTest(testValidListReqFieldsOnly.json)">createValidListTest(testValidListReqFieldsOnly.json)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="removeItemFromListInvalidTest">removeItemFromListInvalidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="removeItemFromListValidTest">removeItemFromListValidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="removeItemInvalidTokenTest">removeItemInvalidTokenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="updateInvalidItemTest">updateInvalidItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="updateItemInListValidTest">updateItemInListValidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ItemTest" hash-for-method="updateItemInvalidListTest">updateItemInvalidListTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="updateListInvalidDataTest">updateListInvalidDataTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="updateListInvalidIdTest">updateListInvalidIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="updateListInvalidTokenTest">updateListInvalidTokenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.LearningModeOn.smoke.ListTest" hash-for-method="updateListValidTest">updateListValidTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.LearningModeOn.smoke.ItemTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDuplicateItemToListTest">
+                  </a> <!-- addDuplicateItemToListTest -->
+                  <span class="method-name">addDuplicateItemToListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addInvalidItemToListErrorTest">
+                  </a> <!-- addInvalidItemToListErrorTest -->
+                  <span class="method-name">addInvalidItemToListErrorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addInvalidItemToListTest(testInvalidItemMediaType.json)">
+                  </a> <!-- addInvalidItemToListTest(testInvalidItemMediaType.json) -->
+                  <span class="method-name">addInvalidItemToListTest</span>
+                  <span class="parameters">(testInvalidItemMediaType.json)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addInvalidItemToListTest(testInvalidItemsMissingMediaId.json)">
+                  </a> <!-- addInvalidItemToListTest(testInvalidItemsMissingMediaId.json) -->
+                  <span class="method-name">addInvalidItemToListTest</span>
+                  <span class="parameters">(testInvalidItemsMissingMediaId.json)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addInvalidItemToListTest(testInvalidItemMediaId.json)">
+                  </a> <!-- addInvalidItemToListTest(testInvalidItemMediaId.json) -->
+                  <span class="method-name">addInvalidItemToListTest</span>
+                  <span class="parameters">(testInvalidItemMediaId.json)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addInvalidItemToListTest(testInvalidItemsMissingMediaType.json)">
+                  </a> <!-- addInvalidItemToListTest(testInvalidItemsMissingMediaType.json) -->
+                  <span class="method-name">addInvalidItemToListTest</span>
+                  <span class="parameters">(testInvalidItemsMissingMediaType.json)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addItemInvalidTokenTest">
+                  </a> <!-- addItemInvalidTokenTest -->
+                  <span class="method-name">addItemInvalidTokenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addValidItemToListTest">
+                  </a> <!-- addValidItemToListTest -->
+                  <span class="method-name">addValidItemToListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemFromListInvalidTest">
+                  </a> <!-- removeItemFromListInvalidTest -->
+                  <span class="method-name">removeItemFromListInvalidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemFromListValidTest">
+                  </a> <!-- removeItemFromListValidTest -->
+                  <span class="method-name">removeItemFromListValidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemInvalidTokenTest">
+                  </a> <!-- removeItemInvalidTokenTest -->
+                  <span class="method-name">removeItemInvalidTokenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateInvalidItemTest">
+                  </a> <!-- updateInvalidItemTest -->
+                  <span class="method-name">updateInvalidItemTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateItemInListValidTest">
+                  </a> <!-- updateItemInListValidTest -->
+                  <span class="method-name">updateItemInListValidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateItemInvalidListTest">
+                  </a> <!-- updateItemInvalidListTest -->
+                  <span class="method-name">updateItemInvalidListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.LearningModeOn.smoke.ListTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearAllItemsinInvalidListTest">
+                  </a> <!-- clearAllItemsinInvalidListTest -->
+                  <span class="method-name">clearAllItemsinInvalidListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearAllItemsinValidListTest">
+                  </a> <!-- clearAllItemsinValidListTest -->
+                  <span class="method-name">clearAllItemsinValidListTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearListInvalidTokenTest">
+                  </a> <!-- clearListInvalidTokenTest -->
+                  <span class="method-name">clearListInvalidTokenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidListTest(testInvalidListMissingName.json, name must be provided)">
+                  </a> <!-- createInvalidListTest(testInvalidListMissingName.json, name must be provided) -->
+                  <span class="method-name">createInvalidListTest</span>
+                  <span class="parameters">(testInvalidListMissingName.json, name must be provided)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidListTest(testInvalidListMissingISO639.json, iso_639_1 must be provided)">
+                  </a> <!-- createInvalidListTest(testInvalidListMissingISO639.json, iso_639_1 must be provided) -->
+                  <span class="method-name">createInvalidListTest</span>
+                  <span class="parameters">(testInvalidListMissingISO639.json, iso_639_1 must be provided)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createListInvalidTokenTest">
+                  </a> <!-- createListInvalidTokenTest -->
+                  <span class="method-name">createListInvalidTokenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createValidListTest(testValidListDefaults.json)">
+                  </a> <!-- createValidListTest(testValidListDefaults.json) -->
+                  <span class="method-name">createValidListTest</span>
+                  <span class="parameters">(testValidListDefaults.json)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createValidListTest(testValidList.json)">
+                  </a> <!-- createValidListTest(testValidList.json) -->
+                  <span class="method-name">createValidListTest</span>
+                  <span class="parameters">(testValidList.json)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createValidListTest(testValidListReqFieldsOnly.json)">
+                  </a> <!-- createValidListTest(testValidListReqFieldsOnly.json) -->
+                  <span class="method-name">createValidListTest</span>
+                  <span class="parameters">(testValidListReqFieldsOnly.json)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateListInvalidDataTest">
+                  </a> <!-- updateListInvalidDataTest -->
+                  <span class="method-name">updateListInvalidDataTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateListInvalidIdTest">
+                  </a> <!-- updateListInvalidIdTest -->
+                  <span class="method-name">updateListInvalidIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateListInvalidTokenTest">
+                  </a> <!-- updateListInvalidTokenTest -->
+                  <span class="method-name">updateListInvalidTokenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateListValidTest">
+                  </a> <!-- updateListValidTest -->
+                  <span class="method-name">updateListValidTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.LearningModeOn.smoke.ItemTest&quot;/&gt;
+      &lt;class name=&quot;com.LearningModeOn.smoke.ListTest&quot;/&gt;
+      &lt;class name=&quot;com.LearningModeOn.util.TestHelper&quot;/&gt;
+      &lt;class name=&quot;com.LearningModeOn.base.SmokeBaseTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(27);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addValidItemToListTest')
+data.setCell(0, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(0, 3, 5361);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addDuplicateItemToListTest')
+data.setCell(1, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(1, 3, 4860);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addInvalidItemToListTest')
+data.setCell(2, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(2, 3, 4530);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'removeItemFromListValidTest')
+data.setCell(3, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(3, 3, 2903);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addItemInvalidTokenTest')
+data.setCell(4, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(4, 3, 2892);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addInvalidItemToListTest')
+data.setCell(5, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(5, 3, 2830);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'updateItemInListValidTest')
+data.setCell(6, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(6, 3, 2809);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'updateInvalidItemTest')
+data.setCell(7, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(7, 3, 2781);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'clearAllItemsinValidListTest')
+data.setCell(8, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(8, 3, 2771);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'removeItemFromListInvalidTest')
+data.setCell(9, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(9, 3, 2771);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addInvalidItemToListTest')
+data.setCell(10, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(10, 3, 2760);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addInvalidItemToListTest')
+data.setCell(11, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(11, 3, 2757);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'clearAllItemsinInvalidListTest')
+data.setCell(12, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(12, 3, 2743);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'updateListInvalidIdTest')
+data.setCell(13, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(13, 3, 2727);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'updateItemInvalidListTest')
+data.setCell(14, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(14, 3, 2693);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'removeItemInvalidTokenTest')
+data.setCell(15, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(15, 3, 2693);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'clearListInvalidTokenTest')
+data.setCell(16, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(16, 3, 2637);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'updateListInvalidDataTest')
+data.setCell(17, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(17, 3, 2302);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'addInvalidItemToListErrorTest')
+data.setCell(18, 2, 'com.LearningModeOn.smoke.ItemTest')
+data.setCell(18, 3, 2084);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'updateListInvalidTokenTest')
+data.setCell(19, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(19, 3, 1723);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'updateListValidTest')
+data.setCell(20, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(20, 3, 1701);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'createValidListTest')
+data.setCell(21, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(21, 3, 947);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'createValidListTest')
+data.setCell(22, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(22, 3, 939);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'createValidListTest')
+data.setCell(23, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(23, 3, 932);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'createInvalidListTest')
+data.setCell(24, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(24, 3, 931);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'createInvalidListTest')
+data.setCell(25, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(25, 3, 924);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'createListInvalidTokenTest')
+data.setCell(26, 2, 'com.LearningModeOn.smoke.ListTest')
+data.setCell(26, 3, 900);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.LearningModeOn.base.SmokeBaseTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.LearningModeOn.smoke.ListTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.LearningModeOn.smoke.ItemTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">addDuplicateItemToListTest</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addInvalidItemToListErrorTest</span>
+                <span class="method-start">5043 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addInvalidItemToListTest(testInvalidItemsMissingMediaId.json)</span>
+                <span class="method-start">7133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addInvalidItemToListTest(testInvalidItemsMissingMediaType.json)</span>
+                <span class="method-start">11663 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addInvalidItemToListTest(testInvalidItemMediaType.json)</span>
+                <span class="method-start">14494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addInvalidItemToListTest(testInvalidItemMediaId.json)</span>
+                <span class="method-start">17254 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addItemInvalidTokenTest</span>
+                <span class="method-start">20012 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addValidItemToListTest</span>
+                <span class="method-start">22905 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeItemFromListInvalidTest</span>
+                <span class="method-start">28267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeItemFromListValidTest</span>
+                <span class="method-start">31039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeItemInvalidTokenTest</span>
+                <span class="method-start">33943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateInvalidItemTest</span>
+                <span class="method-start">36636 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateItemInListValidTest</span>
+                <span class="method-start">39418 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateItemInvalidListTest</span>
+                <span class="method-start">42227 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.LearningModeOn.smoke.ListTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clearAllItemsinInvalidListTest</span>
+                <span class="method-start">44922 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clearAllItemsinValidListTest</span>
+                <span class="method-start">47665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clearListInvalidTokenTest</span>
+                <span class="method-start">50437 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createInvalidListTest(testInvalidListMissingISO639.json, iso_639_1 must be provided)</span>
+                <span class="method-start">53076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createInvalidListTest(testInvalidListMissingName.json, name must be provided)</span>
+                <span class="method-start">54007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createListInvalidTokenTest</span>
+                <span class="method-start">54931 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createValidListTest(testValidList.json)</span>
+                <span class="method-start">55832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createValidListTest(testValidListDefaults.json)</span>
+                <span class="method-start">56779 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createValidListTest(testValidListReqFieldsOnly.json)</span>
+                <span class="method-start">57712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateListInvalidDataTest</span>
+                <span class="method-start">58652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateListInvalidIdTest</span>
+                <span class="method-start">60955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateListInvalidTokenTest</span>
+                <span class="method-start">63683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateListValidTest</span>
+                <span class="method-start">65407 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.LearningModeOn.smoke.ItemTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">67124 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

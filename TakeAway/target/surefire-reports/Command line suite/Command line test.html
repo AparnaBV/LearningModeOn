@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 10 19:21:49 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>66 seconds (66940 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.addDuplicateItemToListTest()'><b>addDuplicateItemToListTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>4</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.addInvalidItemToListErrorTest()'><b>addInvalidItemToListErrorTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.addInvalidItemToListTest()'><b>addInvalidItemToListTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest<br>Parameters: testInvalidItemsMissingMediaId.json</td>
+<td></td>
+<td>4</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.addInvalidItemToListTest()'><b>addInvalidItemToListTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest<br>Parameters: testInvalidItemsMissingMediaType.json</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.addInvalidItemToListTest()'><b>addInvalidItemToListTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest<br>Parameters: testInvalidItemMediaType.json</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.addInvalidItemToListTest()'><b>addInvalidItemToListTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest<br>Parameters: testInvalidItemMediaId.json</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.addItemInvalidTokenTest()'><b>addItemInvalidTokenTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.addValidItemToListTest()'><b>addValidItemToListTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>5</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.clearAllItemsinInvalidListTest()'><b>clearAllItemsinInvalidListTest</b><br>Test class: com.LearningModeOn.smoke.ListTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.clearAllItemsinValidListTest()'><b>clearAllItemsinValidListTest</b><br>Test class: com.LearningModeOn.smoke.ListTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.clearListInvalidTokenTest()'><b>clearListInvalidTokenTest</b><br>Test class: com.LearningModeOn.smoke.ListTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.createInvalidListTest()'><b>createInvalidListTest</b><br>Test class: com.LearningModeOn.smoke.ListTest<br>Parameters: testInvalidListMissingISO639.json, iso_639_1 must be provided</td>
+<td></td>
+<td>0</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.createInvalidListTest()'><b>createInvalidListTest</b><br>Test class: com.LearningModeOn.smoke.ListTest<br>Parameters: testInvalidListMissingName.json, name must be provided</td>
+<td></td>
+<td>0</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.createListInvalidTokenTest()'><b>createListInvalidTokenTest</b><br>Test class: com.LearningModeOn.smoke.ListTest</td>
+<td></td>
+<td>0</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.createValidListTest()'><b>createValidListTest</b><br>Test class: com.LearningModeOn.smoke.ListTest<br>Parameters: testValidList.json</td>
+<td></td>
+<td>0</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.createValidListTest()'><b>createValidListTest</b><br>Test class: com.LearningModeOn.smoke.ListTest<br>Parameters: testValidListDefaults.json</td>
+<td></td>
+<td>0</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.createValidListTest()'><b>createValidListTest</b><br>Test class: com.LearningModeOn.smoke.ListTest<br>Parameters: testValidListReqFieldsOnly.json</td>
+<td></td>
+<td>0</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.removeItemFromListInvalidTest()'><b>removeItemFromListInvalidTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.removeItemFromListValidTest()'><b>removeItemFromListValidTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.removeItemInvalidTokenTest()'><b>removeItemInvalidTokenTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.updateInvalidItemTest()'><b>updateInvalidItemTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.updateItemInListValidTest()'><b>updateItemInListValidTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ItemTest.updateItemInvalidListTest()'><b>updateItemInvalidListTest</b><br>Test class: com.LearningModeOn.smoke.ItemTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ItemTest@71423665</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.updateListInvalidDataTest()'><b>updateListInvalidDataTest</b><br>Test class: com.LearningModeOn.smoke.ListTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.updateListInvalidIdTest()'><b>updateListInvalidIdTest</b><br>Test class: com.LearningModeOn.smoke.ListTest</td>
+<td></td>
+<td>2</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.updateListInvalidTokenTest()'><b>updateListInvalidTokenTest</b><br>Test class: com.LearningModeOn.smoke.ListTest</td>
+<td></td>
+<td>1</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+<tr>
+<td title='com.LearningModeOn.smoke.ListTest.updateListValidTest()'><b>updateListValidTest</b><br>Test class: com.LearningModeOn.smoke.ListTest</td>
+<td></td>
+<td>1</td>
+<td>com.LearningModeOn.smoke.ListTest@20398b7c</td></tr>
+</table><p>
+</body>
+</html>

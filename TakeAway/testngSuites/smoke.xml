@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test - Movie List DB">
+    <test verbose="2" preserve-order="true" parallel="false" name="smoke test">
+        <packages>
+            <package name="com.LearningModeOn.smoke.*"/>
+        </packages>
+        <!--Uncomment the below classes tag to run single class of interest and comment out above package tags&ndash;&gt;-->
+        <!--        <classes>-->
+        <!--            <class name="com.LearningModeOn.smoke.ItemTest"/>-->
+        <!--            <class name="com.LearningModeOn.smoke.ListTest"/>-->
+        <!--        </classes>-->
+    </test>
+</suite>

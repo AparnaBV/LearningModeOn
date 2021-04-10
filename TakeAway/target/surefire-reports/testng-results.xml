@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="31" passed="27">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="66940" started-at="2021-04-10T19:21:49 IST" finished-at="2021-04-10T19:22:55 IST">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="66940" started-at="2021-04-10T19:21:49 IST" finished-at="2021-04-10T19:22:55 IST">
+      <class name="com.LearningModeOn.smoke.ItemTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="beforeSuite" is-config="true" duration-ms="168" started-at="2021-04-10T19:21:48 IST" finished-at="2021-04-10T19:21:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="addDuplicateItemToListTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="addDuplicateItemToListTest" duration-ms="4860" started-at="2021-04-10T19:21:49 IST" finished-at="2021-04-10T19:21:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDuplicateItemToListTest -->
+        <test-method status="PASS" signature="addInvalidItemToListErrorTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="addInvalidItemToListErrorTest" duration-ms="2084" started-at="2021-04-10T19:21:53 IST" finished-at="2021-04-10T19:21:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addInvalidItemToListErrorTest -->
+        <test-method status="PASS" signature="addInvalidItemToListTest(java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="addInvalidItemToListTest" duration-ms="4530" started-at="2021-04-10T19:21:55 IST" data-provider="getItemIngestionFailureData" finished-at="2021-04-10T19:22:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testInvalidItemsMissingMediaId.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addInvalidItemToListTest -->
+        <test-method status="PASS" signature="addInvalidItemToListTest(java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="addInvalidItemToListTest" duration-ms="2830" started-at="2021-04-10T19:22:00 IST" data-provider="getItemIngestionFailureData" finished-at="2021-04-10T19:22:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testInvalidItemsMissingMediaType.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addInvalidItemToListTest -->
+        <test-method status="PASS" signature="addInvalidItemToListTest(java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="addInvalidItemToListTest" duration-ms="2760" started-at="2021-04-10T19:22:03 IST" data-provider="getItemIngestionFailureData" finished-at="2021-04-10T19:22:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testInvalidItemMediaType.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addInvalidItemToListTest -->
+        <test-method status="PASS" signature="addInvalidItemToListTest(java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="addInvalidItemToListTest" duration-ms="2757" started-at="2021-04-10T19:22:06 IST" data-provider="getItemIngestionFailureData" finished-at="2021-04-10T19:22:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testInvalidItemMediaId.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addInvalidItemToListTest -->
+        <test-method status="PASS" signature="addItemInvalidTokenTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="addItemInvalidTokenTest" duration-ms="2892" started-at="2021-04-10T19:22:08 IST" finished-at="2021-04-10T19:22:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemInvalidTokenTest -->
+        <test-method status="PASS" signature="addValidItemToListTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="addValidItemToListTest" duration-ms="5361" started-at="2021-04-10T19:22:11 IST" finished-at="2021-04-10T19:22:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addValidItemToListTest -->
+        <test-method status="PASS" signature="removeItemFromListInvalidTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="removeItemFromListInvalidTest" duration-ms="2771" started-at="2021-04-10T19:22:17 IST" finished-at="2021-04-10T19:22:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemFromListInvalidTest -->
+        <test-method status="PASS" signature="removeItemFromListValidTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="removeItemFromListValidTest" duration-ms="2903" started-at="2021-04-10T19:22:19 IST" finished-at="2021-04-10T19:22:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemFromListValidTest -->
+        <test-method status="PASS" signature="removeItemInvalidTokenTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="removeItemInvalidTokenTest" duration-ms="2693" started-at="2021-04-10T19:22:22 IST" finished-at="2021-04-10T19:22:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemInvalidTokenTest -->
+        <test-method status="PASS" signature="updateInvalidItemTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="updateInvalidItemTest" duration-ms="2781" started-at="2021-04-10T19:22:25 IST" finished-at="2021-04-10T19:22:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateInvalidItemTest -->
+        <test-method status="PASS" signature="updateItemInListValidTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="updateItemInListValidTest" duration-ms="2809" started-at="2021-04-10T19:22:28 IST" finished-at="2021-04-10T19:22:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateItemInListValidTest -->
+        <test-method status="PASS" signature="updateItemInvalidListTest()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="updateItemInvalidListTest" duration-ms="2693" started-at="2021-04-10T19:22:31 IST" finished-at="2021-04-10T19:22:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateItemInvalidListTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.LearningModeOn.smoke.ItemTest@71423665]" name="afterSuite" is-config="true" duration-ms="22158" started-at="2021-04-10T19:22:55 IST" finished-at="2021-04-10T19:23:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.LearningModeOn.smoke.ItemTest -->
+      <class name="com.LearningModeOn.smoke.ListTest">
+        <test-method status="PASS" signature="clearAllItemsinInvalidListTest()[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="clearAllItemsinInvalidListTest" duration-ms="2743" started-at="2021-04-10T19:22:33 IST" finished-at="2021-04-10T19:22:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearAllItemsinInvalidListTest -->
+        <test-method status="PASS" signature="clearAllItemsinValidListTest()[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="clearAllItemsinValidListTest" duration-ms="2771" started-at="2021-04-10T19:22:36 IST" finished-at="2021-04-10T19:22:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearAllItemsinValidListTest -->
+        <test-method status="PASS" signature="clearListInvalidTokenTest()[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="clearListInvalidTokenTest" duration-ms="2637" started-at="2021-04-10T19:22:39 IST" finished-at="2021-04-10T19:22:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearListInvalidTokenTest -->
+        <test-method status="PASS" signature="createInvalidListTest(java.lang.String, java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="createInvalidListTest" duration-ms="931" started-at="2021-04-10T19:22:41 IST" data-provider="getInvalidMovieListData" finished-at="2021-04-10T19:22:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testInvalidListMissingISO639.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iso_639_1 must be provided]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidListTest -->
+        <test-method status="PASS" signature="createInvalidListTest(java.lang.String, java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="createInvalidListTest" duration-ms="924" started-at="2021-04-10T19:22:42 IST" data-provider="getInvalidMovieListData" finished-at="2021-04-10T19:22:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testInvalidListMissingName.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[name must be provided]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidListTest -->
+        <test-method status="PASS" signature="createListInvalidTokenTest()[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="createListInvalidTokenTest" duration-ms="900" started-at="2021-04-10T19:22:43 IST" finished-at="2021-04-10T19:22:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createListInvalidTokenTest -->
+        <test-method status="PASS" signature="createValidListTest(java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="createValidListTest" duration-ms="947" started-at="2021-04-10T19:22:44 IST" data-provider="getValidMovieListData" finished-at="2021-04-10T19:22:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testValidList.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createValidListTest -->
+        <test-method status="PASS" signature="createValidListTest(java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="createValidListTest" duration-ms="932" started-at="2021-04-10T19:22:45 IST" data-provider="getValidMovieListData" finished-at="2021-04-10T19:22:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testValidListDefaults.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createValidListTest -->
+        <test-method status="PASS" signature="createValidListTest(java.lang.String)[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="createValidListTest" duration-ms="939" started-at="2021-04-10T19:22:46 IST" data-provider="getValidMovieListData" finished-at="2021-04-10T19:22:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testValidListReqFieldsOnly.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createValidListTest -->
+        <test-method status="PASS" signature="updateListInvalidDataTest()[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="updateListInvalidDataTest" duration-ms="2302" started-at="2021-04-10T19:22:47 IST" finished-at="2021-04-10T19:22:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateListInvalidDataTest -->
+        <test-method status="PASS" signature="updateListInvalidIdTest()[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="updateListInvalidIdTest" duration-ms="2727" started-at="2021-04-10T19:22:49 IST" finished-at="2021-04-10T19:22:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateListInvalidIdTest -->
+        <test-method status="PASS" signature="updateListInvalidTokenTest()[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="updateListInvalidTokenTest" duration-ms="1723" started-at="2021-04-10T19:22:52 IST" finished-at="2021-04-10T19:22:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateListInvalidTokenTest -->
+        <test-method status="PASS" signature="updateListValidTest()[pri:0, instance:com.LearningModeOn.smoke.ListTest@20398b7c]" name="updateListValidTest" duration-ms="1701" started-at="2021-04-10T19:22:54 IST" finished-at="2021-04-10T19:22:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateListValidTest -->
+      </class> <!-- com.LearningModeOn.smoke.ListTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
